@@ -1,5 +1,6 @@
 import { Router } from "express";
-import { verifyToken } from "../middleware/auth";
+import { verifyToken } from "../middleware/auth.js";
+import { getFeedPosts, getUserPosts, likePost } from "../controllers/posts.js";
 
 const routes = Router();
 
